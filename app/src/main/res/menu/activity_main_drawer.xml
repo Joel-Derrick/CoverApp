@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about_me"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="About Me" />
+    </group>
+    <item android:title="Mock store">
+        <menu>
+            <item
+                android:id="@+id/nav_add_items"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Add Items" />
+            <item
+                android:id="@+id/nav_browse_store"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Browse store" />
+            <item
+                android:id="@+id/nav_cart"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Cart" />
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Contact" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>

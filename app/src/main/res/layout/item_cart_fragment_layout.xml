@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="60dp"
+                android:layout_height="72dp"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/item_name_frag_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageView"
+                android:paddingLeft="10dp"
+                android:text="Item_name"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/item_price_frag_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:paddingRight="10dp"
+                    android:text="price"
+                    android:textSize="18sp" />
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:paddingRight="10dp"
+                        android:text="@string/quantity_short" />
+
+                    <TextView
+                        android:id="@+id/item_quantity_fragment_edit_text"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:text="1"
+                        android:textAlignment="center" />
+                </TableRow>
+
+            </FrameLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
